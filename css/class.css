@@ -1,0 +1,1064 @@
+/**
+ * クリアフィックス
+ */
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.danraku {
+  border-style: solid;
+  border-width: 4px;
+  color: #fff;
+  margin-bottom: 30px;
+  width: 100%;
+}
+/* 枠線の色と背景色だけを個別に指定する*/
+.danraku-01,
+.danraku-02,
+.danraku-03,
+.danraku-04,
+.danraku-05,
+.danraku-06,
+.danraku-07,
+.danraku-08,
+.danraku-09,
+.danraku-10,
+.danraku-11,
+.danraku-12,
+.danraku-13,
+.danraku-14,
+.danraku-15,
+.danraku-16,
+.danraku-17,
+.danraku-18,
+.danraku-19,
+.danraku-20
+{
+  border: #000000 solid 1px;
+  border-left: #000000 solid 10px;
+  border-right: #000000 solid 10px;
+  padding: 20px;
+  background: #d0d0d0;
+}
+h3
+{
+  font-size: 200%;
+  color: #000000;
+}
+.header-link
+{
+  padding: 25px 0px 25px 0px;
+  text-align: center;/*インライン要素を中央寄せ*/
+}
+.danraku a:focus {
+  /* リセット用CSSで指定されている overflow:hidden;を上書きします */
+  overflow: visible;
+}
+
+
+
+
+/* 段落に対するスタイル指定と同じく、
+全てのボタンに共通する指定を上で記述した後、
+ここで、個別に指定を追加します。
+*/
+
+/**
+ * これを最後尾に記述しなければ、ほかの記述で上書きされてしまいます。
+ * ただ、今現在きれいに横並びできているなら、無理にこれを使わなくていいです。
+ */
+.danraku {
+  display: table;
+  margin: 0 auto;
+}
+.danraku a {
+  display: table-cell;
+}
+
+/*---------------------------------------------*/
+.danraku-01 a {
+  width: 190px;
+  /* サイズ指定 */
+  width: 180px;
+  height: 50px;
+  display: inline-block;/*インライン・ブロック要素*/
+  box-sizing: border-box;
+  margin: 0px 5px 0px 5px;
+  /* 縦横中央揃え */
+  text-align: center;
+  line-height: 50px;
+  /* 色指定 */
+  background-image: -webkit-linear-gradient(top, #FC0, #F60);
+  border: 2px solid #F33;
+  color: #FFF;
+  /* 角丸 */
+  border-radius: 25px;
+  /* シャドウ / ベベル */
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(255, 255, 255, 0.9) inset, 0 -1px 3px rgba(0, 0, 0, 0.1) inset;
+  /* その他 */
+  text-decoration: none;
+  font-size: 20px;
+}
+.danraku-01 a:hover {
+  /* 反転 */
+  background-image: -webkit-linear-gradient(top, #F60, #FC0);
+}
+/*---------------------------------------------*/
+.danraku-02 a {
+  width: 190px;
+  height: 50px;
+  color: #000000;
+  display: inline-block;/*インライン・ブロック要素*/
+  box-sizing: border-box;
+  padding: 0px 20px 0px 20px;
+  border-right: 1px solid #000000;
+  /* 縦横中央揃え */
+  text-align: center;
+  line-height: 50px;
+  /* その他 */
+  text-decoration: none;
+  font-size: 20px;
+}
+.danraku-02 a:hover {
+  /* 反転 */
+  background-image: -webkit-linear-gradient(top, #fff, #fff);
+}
+.danraku-02 .first-item {
+  border-left: 1px solid #000000;
+}
+/*---------------------------------------------*/
+.danraku-03 a {
+  width: 190px;
+  height: 50px;
+  color: #000000;
+  display: inline-block;/*インライン・ブロック要素*/
+  box-sizing: border-box;
+  padding: 0px 20px 0px 20px;
+  border-right: 1px solid #000000;
+  /* 縦横中央揃え */
+  text-align: center;
+  line-height: 50px;
+  /* その他 */
+  text-decoration: none;
+  font-size: 20px;
+}
+.danraku-03 a:hover {
+  /* 反転 */
+      color: #7b8fff;
+}
+.danraku-03 .first-item {
+  border-left: 1px solid #000000;
+}
+/*---------------------------------------------*/
+.danraku-04 a {
+  width: 190px;
+  /* サイズ指定 */
+  height: 50px;
+  display: inline-block;/*インライン・ブロック要素*/
+  box-sizing: border-box;
+  padding: 0px 20px 0px 20px;
+  
+  /* 縦横中央揃え */
+  text-align: center;
+  line-height: 50px;
+  
+  /* 色指定 */
+  background-image: -webkit-linear-gradient(top, #000000, #000000);
+  color: #FFF;
+  
+  /* その他 */
+  text-decoration: none;
+  font-size: 20px;
+}
+.danraku-04 a:hover {
+  /* 反転 */
+  background-image: -webkit-linear-gradient(top, #464646, #464646);
+}
+/*---------------------------------------------*/
+.danraku-05 a {
+  display: inline-block;/*インライン・ブロック要素*/
+  box-sizing: border-box;
+}
+.danraku-05 a {
+  display: inline-block;
+  width: 190px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+}
+.danraku-05 a::before,
+.danraku-05 a::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.danraku-05 a,
+.danraku-05 a::before,
+.danraku-05 a::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/*-------------------*/
+.danraku-05 a {
+  background-color: #333;
+  color: #fff;
+}
+.danraku-05 a:hover {
+  background-color: #59b1eb;
+}
+/*---------------------------------------------*/
+.danraku-06 a {
+  display: inline-block;/*インライン・ブロック要素*/
+  box-sizing: border-box;
+}
+.danraku-06 a {
+  display: inline-block;
+  width: 190px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+}
+.danraku-06 a::before,
+.danraku-06 a::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.danraku-06 a,
+.danraku-06 a::before,
+.danraku-06 a::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/*-------------------*/
+.danraku-06 a {
+	background-color: #333;
+	border: 2px solid #333;
+	color: #fff;
+	line-height: 50px;
+}
+.danraku-06 a:hover {
+	background-color: #fff;
+	border-color: #59b1eb;
+	color: #59b1eb;
+}
+/*---------------------------------------------*/
+.danraku-07 a {
+  display: inline-block;/*インライン・ブロック要素*/
+  box-sizing: border-box;
+}
+.danraku-07 a {
+  display: inline-block;
+  width: 190px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+}
+.danraku-07 a::before,
+.danraku-07 a::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.danraku-07 a,
+.danraku-07 a::before,
+.danraku-07 a::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/*-------------------*/
+.danraku-07 a {
+	position: relative;
+	z-index: 2;
+	background-color: #333;
+	border: 2px solid #333;
+	color: #fff;
+	line-height: 50px;
+}
+.danraku-07 a:hover {
+	background-color: #fff;
+	border-color: #59b1eb;
+	color: #59b1eb;
+}
+.danraku-07 a::before,
+.danraku-07 a::after {
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background-color: #333;
+}
+.danraku-07 a::before {
+	right: 0;
+}
+.danraku-07 a::after {
+	left: 0;
+}
+.danraku-07 a:hover::before,
+.danraku-07 a:hover::after {
+	width: 0;
+	background-color: #59b1eb;
+}
+/*---------------------------------------------*/
+.danraku-08 a {
+  display: inline-block;/*インライン・ブロック要素*/
+  box-sizing: border-box;
+}
+.danraku-08 a {
+  display: inline-block;
+  width: 190px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+}
+.danraku-08 a::before,
+.danraku-08 a::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.danraku-08 a,
+.danraku-08 a::before,
+.danraku-08 a::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/*-------------------*/
+.danraku-08 a {
+	position: relative;
+	z-index: 2;
+	background-color: #333;
+	border: 2px solid #333;
+	color: #fff;
+	line-height: 50px;
+}
+.danraku-08 a:hover {
+	background-color: #fff;
+	border-color: #59b1eb;
+	color: #59b1eb;
+}
+.danraku-08 a::before,
+.danraku-08 a::after {
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background-color: #333;
+}
+.danraku-08 a::before {
+	top: 0;
+}
+.danraku-08 a::after {
+	bottom: 0;
+}
+.danraku-08 a:hover::before,
+.danraku-08 a:hover::after {
+	height: 0;
+	background-color: #59b1eb;
+}
+/*---------------------------------------------*/
+.danraku-09 a {
+  display: inline-block;/*インライン・ブロック要素*/
+  box-sizing: border-box;
+  margin: 0 3px;
+}
+.danraku-09 a {
+  display: inline-block;
+  width: 200px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+}
+.danraku-09 a::before,
+.danraku-09 a::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.danraku-09 a,
+.danraku-09 a::before,
+.danraku-09 a::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/*-------------------*/
+.danraku-09 a {
+	background-color: #333;
+	color: #fff;
+}
+.danraku-09 a:hover {
+	letter-spacing: 5px;
+}
+/*---------------------------------------------*/
+.danraku-10 a {
+  display: inline-block;/*インライン・ブロック要素*/
+  box-sizing: border-box;
+  margin: 0 3px;
+}
+.danraku-10 a {
+  display: inline-block;
+  width: 200px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+}
+.danraku-10 a::before,
+.danraku-10 a::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.danraku-10 a,
+.danraku-10 a::before,
+.danraku-10 a::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/*-------------------*/
+.danraku-10 a {
+	background-color: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+	line-height: 50px;
+}
+.danraku-10 a:hover {
+	background-color: rgba(255, 255, 255, .2);
+}
+/*---------------------------------------------*/
+.danraku-11 a {
+  display: inline-block;/*インライン・ブロック要素*/
+  box-sizing: border-box;
+  margin: 0 3px;
+}
+.danraku-11 a {
+  display: inline-block;
+  width: 200px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+}
+.danraku-11 a::before,
+.danraku-11 a::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.danraku-11 a,
+.danraku-11 a::before,
+.danraku-11 a::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/*-------------------*/
+.danraku-11 a {
+	background-color: #fff;
+	border: 2px solid #333;
+	color: #333;
+	line-height: 50px;
+}
+.danraku-11 a:hover {
+	border-style: dashed;
+}
+/*---------------------------------------------*/
+.danraku-12 a {
+  display: inline-block;/*インライン・ブロック要素*/
+  box-sizing: border-box;
+  margin: 0 3px;
+}
+.danraku-12 a {
+  display: inline-block;
+  width: 200px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+}
+.danraku-12 a::before,
+.danraku-12 a::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.danraku-12 a,
+.danraku-12 a::before,
+.danraku-12 a::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/*-------------------*/
+.danraku-12 a {
+	position: relative;
+	z-index: 2;
+	background-color: #fff;
+	border: 2px solid #333;
+	color: #333;
+	line-height: 48px;
+}
+.danraku-12 a::after {
+	top: 4px;
+	left: 4px;
+	width: 188px;
+	height: 42px;
+	border: 2px solid #333;
+	opacity: 0;
+}
+.danraku-12 a:hover::after {
+	opacity: 1;
+}
+/*---------------------------------------------*/
+.danraku-13 a {
+  display: inline-block;/*インライン・ブロック要素*/
+  box-sizing: border-box;
+  margin: 0 3px;
+}
+.danraku-13 a {
+  display: inline-block;
+  width: 200px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+}
+.danraku-13 a::before,
+.danraku-13 a::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.danraku-13 a,
+.danraku-13 a::before,
+.danraku-13 a::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/*-------------------*/
+.danraku-13 a {
+	position: relative;
+	z-index: 2;
+	background-color: #fff;
+	border: 2px solid #333;
+	color: #333;
+	line-height: 50px;
+	overflow: hidden;
+}
+.danraku-13 a:hover {
+	color: #fff;
+}
+.danraku-13 a::after {
+	top: -100%;
+	width: 100%;
+	height: 100%;
+}
+.danraku-13 a:hover::after {
+	top: 0;
+	background-color: #333;
+}
+/*---------------------------------------------*/
+.danraku-14 a {
+  display: inline-block;/*インライン・ブロック要素*/
+  box-sizing: border-box;
+  margin: 0 3px;
+}
+.danraku-14 a {
+  display: inline-block;
+  width: 200px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+}
+.danraku-14 a::before,
+.danraku-14 a::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.danraku-14 a,
+.danraku-14 a::before,
+.danraku-14 a::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/*-------------------*/
+.danraku-14 a {
+	position: relative;
+	z-index: 2;
+	background-color: #fff;
+	border: 2px solid #333;
+	color: #333;
+	line-height: 50px;
+	overflow: hidden;
+}
+.danraku-14 a:hover {
+	color: #fff;
+}
+.danraku-14 a::after {
+	top: -100%;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+}
+.danraku-14 a:hover::after {
+	top: 0;
+	left: 0;
+	background-color: #333;
+}
+/*---------------------------------------------*/
+.danraku-15 a {
+  display: inline-block;/*インライン・ブロック要素*/
+  box-sizing: border-box;
+  margin: 0 3px;
+}
+.danraku-15 a {
+  display: inline-block;
+  width: 200px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+}
+.danraku-15 a::before,
+.danraku-15 a::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.danraku-15 a,
+.danraku-15 a::before,
+.danraku-15 a::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/*-------------------*/
+.danraku-15 a{
+	position: relative;
+	z-index: 2;
+	background-color: #fff;
+	border: 2px solid #333;
+	color: #333;
+	line-height: 50px;
+	overflow: hidden;
+}
+.danraku-15 a:hover {
+	color: #fff;
+}
+.danraku-15 a::after {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: scale(.5);
+	transform: scale(.5);
+}
+.danraku-15 a:hover::after {
+	background: #333;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+/*---------------------------------------------*/
+.danraku-16 a {
+  display: inline-block;/*インライン・ブロック要素*/
+  box-sizing: border-box;
+  margin: 0 3px;
+}
+.danraku-16 a {
+  display: inline-block;
+  width: 200px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+}
+.danraku-16 a::before,
+.danraku-16 a::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.danraku-16 a,
+.danraku-16 a::before,
+.danraku-16 a::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/*-------------------*/
+.danraku-16 a {
+	position: relative;
+	z-index: 2;
+	background-color: #fff;
+	border: 2px solid #333;
+	color: #333;
+	line-height: 50px;
+	overflow: hidden;
+}
+.danraku-16 a:hover {
+	color: #fff;
+}
+.danraku-16 a::after {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.danraku-16 a:hover::after {
+	-webkit-transform: scale(2) rotate(180deg);
+	transform: scale(2) rotate(180deg);
+	background: #333;
+}
+/*---------------------------------------------*/
+.danraku-17 a {
+  display: inline-block;/*インライン・ブロック要素*/
+  box-sizing: border-box;
+  margin: 0 3px;
+}
+.danraku-17 a {
+  display: inline-block;
+  width: 200px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+}
+.danraku-17 a::before,
+.danraku-17 a::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.danraku-17 a,
+.danraku-17 a::before,
+.danraku-17 a::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/*-------------------*/
+.danraku-17 a {
+	position: relative;
+	z-index: 2;
+	border: 2px solid #333;
+	color: #333;
+	line-height: 50px;
+	-webkit-perspective: 300px;
+	perspective: 300px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.danraku-17 a:hover {
+	color: #fff;
+}
+.danraku-17 a::after {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #333;
+	-webkit-transform-origin: center top;
+	transform-origin: center top;
+	-webkit-transform: rotateX(90deg);
+	transform: rotateX(90deg);
+	opacity: 0;
+}
+.danraku-17 a:hover::after {
+	-webkit-transform: rotateX(0);
+	transform: rotateX(0);
+	opacity: 1;
+}
+/*---------------------------------------------*/
+.danraku-18 a {
+  display: inline-block;/*インライン・ブロック要素*/
+  box-sizing: border-box;
+  margin: 0 3px;
+}
+.danraku-18 a {
+  display: inline-block;
+  width: 200px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+}
+.danraku-18 a::before,
+.danraku-18 a::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.danraku-18 a,
+.danraku-18 a::before,
+.danraku-18 a::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/*-------------------*/
+.danraku-18 a {
+	position: relative;
+	z-index: 2;
+	border: 2px solid #333;
+	color: #fff;
+	line-height: 50px;
+	-webkit-perspective: 300px;
+	perspective: 300px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.danraku-18 a:hover {
+	color: #333;
+}
+.danraku-18 a::after {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #333;
+	-webkit-transform-origin: center bottom;
+	transform-origin: center bottom;
+	-webkit-transform: rotateX(0);
+	transform: rotateX(0);
+}
+.danraku-18 a:hover::after {
+	-webkit-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+}
+/*---------------------------------------------*/
+.danraku-19 a {
+  display: inline-block;/*インライン・ブロック要素*/
+  box-sizing: border-box;
+  margin: 0 3px;
+}
+.danraku-19 a {
+  display: inline-block;
+  width: 200px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+}
+.danraku-19 a::before,
+.danraku-19 a::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.danraku-19 a,
+.danraku-19 a::before,
+.danraku-19 a::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/*-------------------*/
+.danraku-19 a {
+	position: relative;
+	-webkit-perspective: 300px;
+	perspective: 300px;
+}
+.danraku-19 a span {
+	display: block;
+	position: absolute;
+	width: 200px;
+	height: 60px;
+	border: 2px solid #333;
+	text-align: center;
+	line-height: 56px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	pointer-events: none;
+}
+.danraku-19 a span:nth-child(1) {
+	background-color: #333;
+	color: #fff;
+	-webkit-transform: rotateX(90deg);
+	-moz-transform: rotateX(90deg);
+	transform: rotateX(90deg);
+	-webkit-transform-origin: 50% 50% -30px;
+	-moz-transform-origin: 50% 50% -30px;
+	transform-origin: 50% 50% -30px;
+}
+.danraku-19 a span:nth-child(2) {
+	background-color: #fff;
+	color: #333;
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+	-webkit-transform-origin: 50% 50% -30px;
+	-moz-transform-origin: 50% 50% -30px;
+	transform-origin: 50% 50% -30px;
+}
+.danraku-19 a:hover span:nth-child(1) {
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+.danraku-19 a:hover span:nth-child(2) {
+	background-color: #333;
+	-webkit-transform: rotateX(-90deg);
+	-moz-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
+}
+/*---------------------------------------------*/
+.danraku-20 a {
+  display: inline-block;/*インライン・ブロック要素*/
+  box-sizing: border-box;
+  margin: 0 3px;
+}
+.danraku-20 a {
+  display: inline-block;
+  width: 200px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+}
+.danraku-20 a::before,
+.danraku-20 a::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.danraku-20 a,
+.danraku-20 a::before,
+.danraku-20 a::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/*-------------------*/
+.danraku-20 a {
+	position: relative;
+	-webkit-perspective: 300px;
+	perspective: 300px;
+}
+.danraku-20 a span {
+	display: block;
+	position: absolute;
+	width: 200px;
+	height: 60px;
+	border: 2px solid #333;
+	text-align: center;
+	line-height: 56px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	pointer-events: none;
+}
+.danraku-20 a span:nth-child(1) {
+	background-color: #333;
+	color: #fff;
+	-webkit-transform: rotateX(90deg);
+	-moz-transform: rotateX(90deg);
+	transform: rotateX(90deg);
+	-webkit-transform-origin: 50% 50% -30px;
+	-moz-transform-origin: 50% 50% -30px;
+	transform-origin: 50% 50% -30px;
+}
+.danraku-20 a span:nth-child(2) {
+	background-color: #fff;
+	color: #333;
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+	-webkit-transform-origin: 50% 50% -30px;
+	-moz-transform-origin: 50% 50% -30px;
+	transform-origin: 50% 50% -30px;
+}
+.danraku-20 a:hover span:nth-child(1) {
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+.danraku-20 a:hover span:nth-child(2) {
+	background-color: #333;
+	-webkit-transform: rotateX(-90deg);
+	-moz-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
+}
+/*---------------------------------------------*/
